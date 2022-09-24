@@ -85,6 +85,11 @@ package () {
 	#sed "s/^Image=.*/Image=${value}/g" ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc"
 
+	##
+	## ~/.config/kscreenlockerrc
+	##
+	#sed "s/^Image=.*/Image=${value}/g" ~/.config/kscreenlockerrc
+	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/kscreenlockerrc"
 
 	return 0
 }
