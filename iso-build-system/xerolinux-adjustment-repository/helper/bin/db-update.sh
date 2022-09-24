@@ -31,19 +31,33 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 mod_db_update () {
 
+	util_error_echo
+
 	##cd ../../repo/main
+	util_error_echo "cd $THE_REPO_MAIN_DIR_PATH"
 	cd "$THE_REPO_MAIN_DIR_PATH"
 
 	#repo-add -n -R xerolinux-adjustment.db.tar.gz *.pkg.tar.zst
 
 	repo_name="xerolinux-adjustment"
 
+	util_error_echo "rm -f ${repo_name}.*"
 	rm -f ${repo_name}.*
 
+
+	util_error_echo
+
+	util_error_echo "repo-add -n -R ${repo_name}.db.tar.gz *.pkg.tar.zst"
 	repo-add -n -R ${repo_name}.db.tar.gz *.pkg.tar.zst
 
 
+
+	util_error_echo
+
+	util_error_echo "cd $OLDPWD"
 	cd "$OLDPWD"
+
+	util_error_echo
 }
 
 ##
