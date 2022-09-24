@@ -31,7 +31,9 @@ util_error_echo () {
 exit_on_signal_interrupted () {
 
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Script interrupted."
+	util_error_echo "##"
 	util_error_echo
 
 	mod_iso_clean_on_exit
@@ -41,7 +43,9 @@ exit_on_signal_interrupted () {
 exit_on_signal_terminated () {
 
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Script terminated."
+	util_error_echo "##"
 	util_error_echo
 
 	mod_iso_clean_on_exit
@@ -90,7 +94,9 @@ mod_iso_profile_prepare () {
 
 mod_iso_clean_on_prepare () {
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Cleaning Data On Prepare"
+	util_error_echo "##"
 	util_error_echo
 
 
@@ -107,7 +113,9 @@ mod_iso_clean_on_prepare () {
 
 mod_iso_clean_on_exit () {
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Cleaning Data On Exit"
+	util_error_echo "##"
 	util_error_echo
 
 	util_error_echo "rm -rf ./tmp/out"
@@ -117,7 +125,9 @@ mod_iso_clean_on_exit () {
 
 mod_iso_clean_on_finish () {
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Cleaning Data On Finish"
+	util_error_echo "##"
 	util_error_echo
 
 	#rm -rf "./tmp/work"
@@ -133,7 +143,9 @@ mod_iso_make_prepare () {
 mod_iso_make () {
 
 	util_error_echo
+	util_error_echo "##"
 	util_error_echo "## Building New ISO"
+	util_error_echo "##"
 	util_error_echo
 
 	#sudo mkarchiso -v profile
@@ -177,33 +189,63 @@ mod_iso_build () {
 ##
 
 mod_iso_profile_overlay () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## Overlay Config"
+	util_error_echo "##"
+	util_error_echo
+
 	mod_iso_profile_overlay_pacman_conf
 	mod_iso_profile_overlay_packages_x86_64
 	mod_iso_profile_overlay_locale
 }
 
 mod_iso_profile_overlay_pacman_conf () {
+
+	util_error_echo
+
+	util_error_echo "cp -f ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf"
 	cp -f ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf
 
+
+	util_error_echo "cp -f ./asset/overlay-build/pacman.conf ./profile/pacman.conf"
 	cp -f ./asset/overlay-build/pacman.conf ./profile/pacman.conf
+
+
+	util_error_echo
+
 }
 
 mod_iso_profile_overlay_packages_x86_64 () {
 
+	util_error_echo
+
+	util_error_echo "sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64"
 	sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64
 
+	util_error_echo "cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64"
 	cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64
 
+	util_error_echo
 
 }
 
 mod_iso_profile_overlay_locale () {
 
+	util_error_echo
+
+	util_error_echo "cp -f ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf"
 	cp -f ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf
-	
+
+
+	#util_error_echo "cp -f ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen"
 	#cp -f ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen
 	
+	util_error_echo "cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook"
 	cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
+
+	util_error_echo
 }
 
 ##
