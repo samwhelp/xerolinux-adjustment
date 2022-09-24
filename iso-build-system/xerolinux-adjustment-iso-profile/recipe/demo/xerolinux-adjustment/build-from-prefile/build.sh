@@ -189,7 +189,12 @@ mod_iso_profile_overlay_pacman_conf () {
 }
 
 mod_iso_profile_overlay_packages_x86_64 () {
+
+	sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64
+
 	cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64
+
+
 }
 
 mod_iso_profile_overlay_locale () {
