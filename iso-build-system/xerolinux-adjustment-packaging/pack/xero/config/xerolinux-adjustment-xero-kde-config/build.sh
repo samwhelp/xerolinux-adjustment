@@ -80,7 +80,7 @@ mod_package_clean_on_finish () {
 	util_error_echo "## Cleaning On Finish"
 	util_error_echo
 
-	#return 0
+	return 0
 
 	rm -f *.zst
 	rm -rf pkg

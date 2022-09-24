@@ -88,8 +88,17 @@ package () {
 	##
 	## ~/.config/kscreenlockerrc
 	##
+
 	#sed "s/^Image=.*/Image=${value}/g" ~/.config/kscreenlockerrc
 	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/kscreenlockerrc"
+
+	##
+	## ~/.config/latte/Xero.layout.latte
+	##
+	
+	## always  visible
+	sed -i "s/^visibility=.*/visibility=0/g" "${pkgdir}/etc/skel/.config/latte/Xero.layout.latte"
+
 
 	return 0
 }
