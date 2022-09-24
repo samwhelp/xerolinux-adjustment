@@ -7,8 +7,7 @@
 
 | iso-profile |
 | --- |
-| [releng](https://gitlab.archlinux.org/archlinux/archiso/-/tree/master/configs/releng) |
-| [profile](https://github.com/samwhelp/asamarch-iso-profile/tree/main/recipe/demo/develop/build-from-profile/profile) |
+| [profile](https://github.com/xerolinux/xero_iso/tree/main/archiso) |
 
 
 ## Howto
