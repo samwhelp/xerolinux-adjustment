@@ -1,0 +1,5 @@
+*.zst
+pkg/*
+src/*
+package/*
+xero-kde-config

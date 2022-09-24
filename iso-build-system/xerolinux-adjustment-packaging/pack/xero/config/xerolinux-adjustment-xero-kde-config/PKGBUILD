@@ -1,0 +1,79 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=xerolinux-adjustment-xero-kde-config
+pkgver=0.1
+pkgrel=1
+pkgdesc="Xerolinux Adjustment / Xero / Kde Config"
+url="https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-packaging/pack/xero/config/xerolinux-adjustment-xero-kde-config"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+##
+## ## Source
+##
+## * https://github.com/xerolinux/xero-kde-config
+##
+
+source=("git+https://github.com/xerolinux/xero-kde-config.git")
+
+sha256sums=('SKIP')
+
+
+prepare () {
+
+	##return 0
+
+	cp -af ../asset/. "${srcdir}"
+}
+
+
+package () {
+
+	##
+	## Path
+	##
+
+	#echo "${pkgdir}"
+	#echo "${srcdir}"
+
+	local source_system_etc_dir_path="${srcdir}/xero-kde-config/etc"
+	local target_system_etc_dir_path="${pkgdir}/etc"
+
+	local source_overlay_etc_dir_path="${srcdir}/overlay/etc"
+
+
+
+	##
+	## Prepare Dir
+	##
+
+	install -dm755 "${target_system_etc_dir_path}"
+
+
+	##
+	## Main Content
+	##
+
+	## xero-kde-config: /etc
+	cp -af "${source_system_etc_dir_path}/." "${target_system_etc_dir_path}"
+
+	## overlay: /etc
+	cp -avf "${source_overlay_etc_dir_path}/." "${target_system_etc_dir_path}"
+
+
+	return 0
+}
