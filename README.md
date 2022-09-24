@@ -13,7 +13,7 @@
 | [xerolinux-adjustment-repository](https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-repository) |
 
 
-## demo
+## demo build
 
 | prefile |
 | --- |
