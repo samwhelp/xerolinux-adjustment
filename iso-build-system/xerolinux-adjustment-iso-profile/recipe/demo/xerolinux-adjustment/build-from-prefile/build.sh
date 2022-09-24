@@ -148,8 +148,8 @@ mod_iso_make () {
 	util_error_echo "##"
 	util_error_echo
 
-	#sudo mkarchiso -v profile
-	#sudo mkarchiso -w tmp/work -o tmp/out -v profile
+	##sudo mkarchiso -v profile
+	sudo mkarchiso -w tmp/work -o tmp/out -v profile
 
 
 }
