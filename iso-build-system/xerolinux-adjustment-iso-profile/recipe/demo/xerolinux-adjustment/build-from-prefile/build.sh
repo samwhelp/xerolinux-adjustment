@@ -64,6 +64,23 @@ mod_signal_bind () {
 
 mod_iso_profile_prepare () {
 
+	#cp -r /usr/share/archiso/configs/releng ./profile
+
+
+	util_error_echo "mkdir -p ./tmp"
+	mkdir -p ./tmp
+
+	util_error_echo "git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso"
+	git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso
+
+	util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
+	cp -rf ./tmp/xero_iso/archiso ./profile
+
+	util_error_echo
+
+	
+	mod_iso_profile_overlay
+
 	util_error_echo "mkdir -p ./tmp"
 	mkdir -p ./tmp
 
@@ -75,8 +92,12 @@ mod_iso_clean_on_prepare () {
 	util_error_echo
 
 
+	util_error_echo "rm -rf ./profile"
+	rm -rf "./profile"
+
 	util_error_echo "sudo rm -rf ./tmp/out"
 	sudo rm -rf "./tmp/out"
+
 
 }
 
@@ -85,7 +106,6 @@ mod_iso_clean_on_exit () {
 	util_error_echo "## Cleaning Data On Exit"
 	util_error_echo
 
-	#rm -rf "./tmp/work"
 	util_error_echo "sudo rm -rf ./tmp/out"
 	sudo rm -rf "./tmp/out"
 
@@ -145,6 +165,40 @@ mod_iso_build () {
 
 ##
 ### Tail: Model / Build ISO
+################################################################################
+
+
+################################################################################
+### Head: Model / Build ISO / Overlay Profile
+##
+
+mod_iso_profile_overlay () {
+	mod_iso_profile_overlay_pacman_conf
+	mod_iso_profile_overlay_packages_x86_64
+	mod_iso_profile_overlay_locale
+}
+
+mod_iso_profile_overlay_pacman_conf () {
+	cp -f ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf
+
+	cp -f ./asset/overlay-build/pacman.conf ./profile/pacman.conf
+}
+
+mod_iso_profile_overlay_packages_x86_64 () {
+	cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64
+}
+
+mod_iso_profile_overlay_locale () {
+
+	cp -f ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf
+	
+	#cp -f ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen
+	
+	cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
+}
+
+##
+### Tail: Model / Build ISO / Overlay Profile
 ################################################################################
 
 

@@ -1,0 +1,18 @@
+
+##
+## remove from airootfs!
+##
+
+[Trigger]
+Operation = Install
+Type = Package
+Target = glibc
+
+[Action]
+Description = Uncommenting en_US.UTF-8 zh_TW.UTF-8 locale and running locale-gen...
+When = PostTransaction
+Depends = glibc
+Depends = sed
+Depends = sh
+#Exec = /bin/sh -c "sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen && locale-gen"
+Exec = /bin/sh -c "sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen; sed -i 's/#\(zh_TW\.UTF-8\)/\1/' /etc/locale.gen; locale-gen;"
