@@ -205,12 +205,21 @@ mod_iso_profile_overlay_pacman_conf () {
 
 	util_error_echo
 
-	util_error_echo "cp -f ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf"
-	cp -f ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf
+	#util_error_echo "install -Dm644 ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf"
+	#install -Dm644 ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf
+
+	util_error_echo "cat ./asset/overlay/etc/pacman.conf.part >> ./profile/airootfs/etc/pacman.conf"
+	cat ./asset/overlay/etc/pacman.conf.part >> ./profile/airootfs/etc/pacman.conf
 
 
-	util_error_echo "cp -f ./asset/overlay-build/pacman.conf ./profile/pacman.conf"
-	cp -f ./asset/overlay-build/pacman.conf ./profile/pacman.conf
+
+	#util_error_echo "install -Dm644 ./asset/overlay-build/pacman.conf ./profile/pacman.conf"
+	#install -Dm644 ./asset/overlay-build/pacman.conf ./profile/pacman.conf
+
+
+	util_error_echo "cat ./asset/overlay-build/pacman.conf.part >> ./profile/pacman.conf"
+	cat ./asset/overlay-build/pacman.conf.part >> ./profile/pacman.conf
+
 
 
 	util_error_echo
@@ -235,15 +244,15 @@ mod_iso_profile_overlay_locale () {
 
 	util_error_echo
 
-	util_error_echo "cp -f ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf"
-	cp -f ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf
+	util_error_echo "install -Dm644 ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf"
+	install -Dm644 ./asset/overlay/etc/locale.conf ./profile/airootfs/etc/locale.conf
 
 
-	#util_error_echo "cp -f ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen"
-	#cp -f ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen
+	#util_error_echo "install -Dm644 ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen"
+	#install -Dm644 ./asset/overlay/etc/locale.gen ./profile/airootfs/etc/locale.gen
 	
-	util_error_echo "cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook"
-	cp -f ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
+	util_error_echo "install -Dm644 ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook"
+	install -Dm644 ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
 
 	util_error_echo
 }

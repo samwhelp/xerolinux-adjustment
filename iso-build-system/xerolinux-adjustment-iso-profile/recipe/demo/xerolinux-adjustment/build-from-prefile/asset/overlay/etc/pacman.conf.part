@@ -1,0 +1,22 @@
+
+
+
+
+################################################################################
+### Head: XeroLinux Adjustment
+##
+
+##
+## XeroLinux Adjustment Repository
+##
+
+#[xerolinux-adjustment]
+#SigLevel = Optional TrustAll
+#Include = /etc/pacman.d/xerolinux-adjustment-mirrorlist
+#Server = file:///opt/xerolinux-adjustment/iso-build-system/xerolinux-adjustment-repository/repo/main
+
+
+##
+### Tail: XeroLinux Adjustment
+################################################################################
+
