@@ -75,5 +75,16 @@ package () {
 	cp -avf "${source_overlay_etc_dir_path}/." "${target_system_etc_dir_path}"
 
 
+	##
+	## wallpaper
+	##
+
+	## https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/project/grubrc-profile/grubrc-theme-ctrl/grubrc-theme-ctrl#L719
+	local image_file_path='file:///usr/share/wallpapers/Xero-Plasma6.jpg'
+	local value="${image_file_path//\//\\\/}" ## escape all /
+	#sed "s/^Image=.*/Image=${value}/g" ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc"
+
+
 	return 0
 }
