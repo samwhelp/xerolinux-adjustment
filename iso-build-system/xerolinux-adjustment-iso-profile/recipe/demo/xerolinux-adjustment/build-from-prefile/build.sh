@@ -199,6 +199,7 @@ mod_iso_profile_overlay () {
 	mod_iso_profile_overlay_pacman_conf
 	mod_iso_profile_overlay_packages_x86_64
 	mod_iso_profile_overlay_locale
+	mod_iso_profile_overlay_bashrc
 }
 
 mod_iso_profile_overlay_pacman_conf () {
@@ -253,6 +254,16 @@ mod_iso_profile_overlay_locale () {
 	
 	util_error_echo "install -Dm644 ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook"
 	install -Dm644 ./asset/overlay/etc/pacman.d/hooks/40-locale-gen.hook ./profile/airootfs/etc/pacman.d/hooks/40-locale-gen.hook
+
+	util_error_echo
+}
+
+mod_iso_profile_overlay_bashrc () {
+
+	util_error_echo
+
+	util_error_echo "install -Dm644 ./asset/overlay/etc/skel/.bashrc ./profile/airootfs/etc/skel/.bashrc"
+	install -Dm644 ./asset/overlay/etc/skel/.bashrc ./profile/airootfs/etc/skel/.bashrc
 
 	util_error_echo
 }
