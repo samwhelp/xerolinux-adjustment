@@ -1,0 +1,38 @@
+
+##
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/PKGBUILD
+##
+
+pkgname=xerolinux-adjustment-modeling-fcitx-chewing
+pkgver=0.1
+pkgrel=1
+pkgdesc="XeroLinux Adjustment / Modeling / Fcitx / Chewing"
+url="https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-packaging/pack/core/im/xerolinux-adjustment-modeling-fcitx-chewing"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	##
+	## Main Config
+	##
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+
+}
