@@ -30,20 +30,18 @@ noto-fonts-cjk
 ## fcitx5
 ##
 
+xerolinux-adjustment-modeling-fcitx5-chewing
 fcitx5
 fcitx5-chewing
 fcitx5-gtk
 fcitx5-qt
 fcitx5-configtool
 
-
 #fcitx5-chinese-addons
 #fcitx5-m17n
 #fcitx5-material-color
 #fcitx5-lua
 #fcitx5-anthy
-
-xerolinux-adjustment-modeling-fcitx5-chewing
 
 
 ##
@@ -61,13 +59,78 @@ exfat-utils
 archiso
 base-devel
 
+
+##
+## Downloaer
+##
+
+git
+wget
+curl
+
+
 ##
 ## Text Editor
 ##
 
+xerolinux-adjustment-modeling-vi
 vim
 neovim
 micro
+
+xerolinux-adjustment-modeling-sublime-text
+sublime-text-4
+
+
+##
+## Terminal
+##
+
+xerolinux-adjustment-modeling-sakura
+sakura
+
+
+##
+## File Manager
+##
+
+xerolinux-adjustment-modeling-pcmanfm-qt
+pcmanfm-qt
+lxqt-archiver
+
+
+##
+## Image Viewer
+##
+
+xerolinux-adjustment-modeling-viewnior
+viewnior
+
+
+##
+## Video Player
+##
+
+xerolinux-adjustment-modeling-mpv
+mpv
+youtube-dl
+
+
+##
+## fzf
+##
+
+fzf
+ueberzug
+
+
+##
+## pygithub
+##
+
+python-pygithub
+
+
 
 ##
 ### Tail: xerolinux-adjustment
