@@ -72,7 +72,7 @@ mod_iso_profile_prepare () {
 
 	util_error_echo "git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso"
 	if ! git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso; then
-		echo 'exits'
+		util_error_echo 'xero_iso exits'
 	fi
 
 	util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
