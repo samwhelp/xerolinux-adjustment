@@ -1,0 +1,30 @@
+
+
+pkgname=xerolinux-adjustment-mirrorlist
+pkgver=0.1
+pkgrel=1
+pkgdesc="XeroLinux Adjustment Mirrorlist"
+url="https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-packaging/pack/base/xerolinux-adjustment-mirrorlist"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	## install mirrorlist
+	## /etc/pacman.d/xerolinux-adjustment-mirrorlist
+	install -Dm644 "${srcdir}/overlay/etc/pacman.d/${pkgname}" "${pkgdir}/etc/pacman.d/${pkgname}"
+
+}

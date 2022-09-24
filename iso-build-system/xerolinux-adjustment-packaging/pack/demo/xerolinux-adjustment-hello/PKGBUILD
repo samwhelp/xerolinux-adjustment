@@ -1,0 +1,44 @@
+
+##
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/PKGBUILD
+##
+
+pkgname=xerolinux-adjustment-hello
+pkgver=0.1
+pkgrel=1
+pkgdesc="XeroLinux Adjustment Hello Script"
+url="https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-packaging/pack/demo/xerolinux-adjustment-hello"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	echo "## prepare"
+
+	#echo "pwd: $(pwd)"
+	#echo "\$srcdir: ${srcdir}"
+	#echo "\$pkgdir: ${pkgdir}"
+	#return 0
+
+	cp -af ../asset/. "${srcdir}"
+	#cp -afv ../asset/. "${srcdir}"
+}
+
+
+package () {
+
+	echo "## package"
+
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+	#cp -afv "${srcdir}/overlay/." "${pkgdir}"
+
+}
