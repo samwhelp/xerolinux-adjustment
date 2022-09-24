@@ -37,6 +37,8 @@ fcitx5-configtool
 #fcitx5-lua
 #fcitx5-anthy
 
+xerolinux-adjustment-modeling-fcitx5-chewing
+
 
 ##
 ## for ventoy: remvoe exfatprogs and install exfat-utils
