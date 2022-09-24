@@ -97,9 +97,11 @@ mod_iso_clean_on_prepare () {
 	util_error_echo "rm -rf ./profile"
 	rm -rf "./profile"
 
-	util_error_echo "sudo rm -rf ./tmp/out"
-	sudo rm -rf "./tmp/out"
+	util_error_echo "rm -rf ./tmp/out"
+	rm -rf "./tmp/out"
 
+	util_error_echo "sudo rm -rf ./tmp/work"
+	sudo rm -rf "./tmp/work"
 
 }
 
@@ -108,8 +110,8 @@ mod_iso_clean_on_exit () {
 	util_error_echo "## Cleaning Data On Exit"
 	util_error_echo
 
-	util_error_echo "sudo rm -rf ./tmp/out"
-	sudo rm -rf "./tmp/out"
+	util_error_echo "rm -rf ./tmp/out"
+	rm -rf "./tmp/out"
 
 }
 
@@ -135,7 +137,7 @@ mod_iso_make () {
 	util_error_echo
 
 	#sudo mkarchiso -v profile
-	sudo mkarchiso -w tmp/work -o tmp/out -v profile
+	#sudo mkarchiso -w tmp/work -o tmp/out -v profile
 
 
 }
