@@ -223,7 +223,6 @@ activate entry 6=Meta+6,Meta+6,Activate Entry 6
 activate entry 7=Meta+7,Meta+7,Activate Entry 7
 activate entry 8=Meta+8,Meta+8,Activate Entry 8
 activate entry 9=Meta+9,Meta+9,Activate Entry 9
-activate widget 110=Meta+Space,none,Activate Present Windows Button Widget
 activate widget 200=Alt+F1,none,Activate Application Menu Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
