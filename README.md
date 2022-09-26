@@ -1,6 +1,8 @@
 
 # xerolinux-adjustment
 
+| Link | GitHub |
+| --- | --- |
 | [Xero Linux](https://xerolinux.xyz/) | [GitHub](https://github.com/XeroLinux) |
 | [xerolinux-adjustment](https://samwhelp.github.io/xerolinux-adjustment/) | [GitHub](https://github.com/samwhelp/xerolinux-adjustment) |
 
