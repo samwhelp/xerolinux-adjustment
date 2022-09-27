@@ -204,9 +204,19 @@ mod_iso_make () {
 
 mod_iso_make_finish () {
 
+	mod_iso_make_change_owner
+
 	mod_iso_make_copy_to_store
 
 	mod_iso_clean_on_finish
+
+}
+
+mod_iso_make_change_owner () {
+
+	sudo chown $(id -u):$(id -u) tmp/out -R
+
+	#sudo chown $(id -un):$(id -un) tmp/out -R
 
 }
 
