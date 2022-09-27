@@ -76,28 +76,39 @@ package () {
 
 
 	##
-	## wallpaper
+	## ## Wallpaper
 	##
-
 	## https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/project/grubrc-profile/grubrc-theme-ctrl/grubrc-theme-ctrl#L719
 	local image_file_path='file:///usr/share/wallpapers/Xero-Plasma6.jpg'
 	local value="${image_file_path//\//\\\/}" ## escape all /
 	#sed "s/^Image=.*/Image=${value}/g" ~/.config/plasma-org.kde.plasma.desktop-appletsrc
 	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc"
 
+
 	##
+	## ## Screen Locker Background
 	## ~/.config/kscreenlockerrc
 	##
-
 	#sed "s/^Image=.*/Image=${value}/g" ~/.config/kscreenlockerrc
 	sed -i "s/^Image=.*/Image=${value}/g" "${pkgdir}/etc/skel/.config/kscreenlockerrc"
 
+
 	##
+	## ## Panel or Dock (Always  Visible)
 	## ~/.config/latte/Xero.layout.latte
 	##
-	
-	## always  visible
 	sed -i "s/^visibility=.*/visibility=0/g" "${pkgdir}/etc/skel/.config/latte/Xero.layout.latte"
+
+
+	##
+	## ## NumLock (Leave Unchanged)
+	## ~/.config/kcminputrc
+	##
+	## ### use comment
+	#sed -i "s/^NumLock=.*/#NumLock=0/g" "${pkgdir}/etc/skel/.config/kcminputrc"
+	## ### use delete
+	sed -i "/^NumLock=.*/d" "${pkgdir}/etc/skel/.config/kcminputrc"
+
 
 
 	return 0
