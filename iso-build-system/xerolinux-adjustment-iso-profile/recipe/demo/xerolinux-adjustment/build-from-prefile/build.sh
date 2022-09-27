@@ -74,13 +74,14 @@ mod_iso_profile_prepare () {
 	util_error_echo "mkdir -p ./tmp"
 	mkdir -p ./tmp
 
-	util_error_echo "git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso"
-	if ! git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso; then
-		util_error_echo 'xero_iso exits'
-	fi
 
-	util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
-	cp -rf ./tmp/xero_iso/archiso ./profile
+	## by zip
+	#mod_iso_profile_prepare_by_zip
+
+	## by git
+	mod_iso_profile_prepare_by_git
+
+
 
 	util_error_echo
 
@@ -91,6 +92,53 @@ mod_iso_profile_prepare () {
 	mkdir -p ./tmp
 
 }
+
+mod_iso_profile_prepare_by_zip () {
+
+	if [ -d "./tmp/xero_iso-main/archiso" ]; then
+		util_error_echo "cp -rf ./tmp/xero_iso-main/archiso ./profile"
+		cp -rf ./tmp/xero_iso-main/archiso ./profile
+		return
+	fi
+
+	wget -c 'https://github.com/xerolinux/xero_iso/archive/refs/heads/main.zip' -O tmp/xero_iso.zip
+
+
+	cd tmp
+
+	unzip xero_iso.zip
+
+	cd "${OLDPWD}"
+
+
+
+	util_error_echo "cp -rf ./tmp/xero_iso-main/archiso ./profile"
+	cp -rf ./tmp/xero_iso-main/archiso ./profile
+
+}
+
+mod_iso_profile_prepare_by_git () {
+
+
+	if [ -d "./tmp/xero_iso/archiso" ]; then
+		util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
+		cp -rf ./tmp/xero_iso/archiso ./profile
+		return
+	fi
+
+
+	## by git
+	util_error_echo "git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso"
+	if ! git clone https://github.com/xerolinux/xero_iso.git ./tmp/xero_iso; then
+		util_error_echo 'xero_iso exits'
+	fi
+
+	util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
+	cp -rf ./tmp/xero_iso/archiso ./profile
+
+
+}
+
 
 mod_iso_clean_on_prepare () {
 	util_error_echo
@@ -200,6 +248,7 @@ mod_iso_profile_overlay () {
 	mod_iso_profile_overlay_packages_x86_64
 	mod_iso_profile_overlay_locale
 	mod_iso_profile_overlay_bashrc
+	mod_iso_profile_overlay_sddm_conf
 }
 
 mod_iso_profile_overlay_pacman_conf () {
@@ -266,6 +315,19 @@ mod_iso_profile_overlay_bashrc () {
 	install -Dm644 ./asset/overlay/etc/skel/.bashrc ./profile/airootfs/etc/skel/.bashrc
 
 	util_error_echo
+}
+
+
+mod_iso_profile_overlay_sddm_conf () {
+
+	util_error_echo
+
+	util_error_echo "sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64"
+	sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64
+
+
+	util_error_echo
+
 }
 
 ##
