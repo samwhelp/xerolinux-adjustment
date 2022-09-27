@@ -322,9 +322,12 @@ mod_iso_profile_overlay_sddm_conf () {
 
 	util_error_echo
 
-	util_error_echo "sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64"
-	sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64
+	util_error_echo "sed -i 's/^Numlock=on/Numlock=/g' ./profile/airootfs/etc/sddm.conf"
+	sed -i 's/^Numlock=on/Numlock=/g' ./profile/airootfs/etc/sddm.conf
 
+
+	util_error_echo "sed -i 's/^Numlock=on/Numlock=/g' ./profile/airootfs/etc/sddm.conf.d/kde_settings.conf"
+	sed -i 's/^Numlock=on/Numlock=/g' ./profile/airootfs/etc/sddm.conf.d/kde_settings.conf
 
 	util_error_echo
 
