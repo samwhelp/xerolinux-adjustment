@@ -21,3 +21,10 @@
 | prefile |
 | --- |
 | [xerolinux-adjustment](https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-iso-profile/recipe/demo/xerolinux-adjustment/build-from-prefile) |
+
+
+## keybind
+
+| keybind |
+| --= |
+| [xerolinux-adjustment](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
