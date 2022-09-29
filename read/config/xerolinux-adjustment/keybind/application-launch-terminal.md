@@ -23,7 +23,7 @@ grand_parent: Config
 
 ## Dropdown
 
-* [config snippet](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L359-381)
+* [config snippet](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L359-L361)
 
 | Keybind          | Action                      | Command                     |
 | ----------------- | ------------------------- | ---------------------------- |
