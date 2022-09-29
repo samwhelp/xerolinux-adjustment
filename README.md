@@ -26,5 +26,5 @@
 ## keybind
 
 | keybind |
-| --= |
+| --- |
 | [xerolinux-adjustment](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
