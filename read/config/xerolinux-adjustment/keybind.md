@@ -27,6 +27,7 @@ grand_parent: Config
 | Subject |
 | --- |
 | [System Control](keybind/system-control) |
+| [System Menu](keybind/system-menu) |
 
 
 ## Application Launch
