@@ -1,0 +1,6 @@
+fcitx
+fcitx-chewing
+fcitx-qt5
+fcitx-qt6
+fcitx-configtool
+
