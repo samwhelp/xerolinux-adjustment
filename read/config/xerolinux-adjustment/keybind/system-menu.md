@@ -1,6 +1,6 @@
 ---
 title: System Menu
-nav_order: 5001
+nav_order: 5002
 has_children: false
 parent: xerolinux-adjustment
 grand_parent: Config
