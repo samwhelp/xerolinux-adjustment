@@ -9,6 +9,8 @@ grand_parent: Config
 
 # Keybind
 
+> [Xerolinux Adjustment](https://samwhelp.github.io/xerolinux-adjustment/)
+
 
 ## Subject
 
