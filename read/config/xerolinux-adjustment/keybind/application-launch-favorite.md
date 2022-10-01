@@ -9,6 +9,11 @@ grand_parent: Config
 
 # Launch Favorite Application
 
+> Xerolinux Adjustment / [Keybind](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
+
+
+## Favorite Application
+
 * [config snippet / dolphin](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L269-L271)
 * [config snippet / kate](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L273-L275)
 * [config snippet / firefox](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L13-L17)

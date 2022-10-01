@@ -9,6 +9,8 @@ grand_parent: Config
 
 # System Menu
 
+> Xerolinux Adjustment / [Keybind](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
+
 
 ## Show Window Operations Menu
 

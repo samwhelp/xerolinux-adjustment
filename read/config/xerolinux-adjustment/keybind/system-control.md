@@ -9,6 +9,8 @@ grand_parent: Config
 
 # System Control
 
+> Xerolinux Adjustment / [Keybind](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
+
 
 ## Toggle Show Desktop
 
