@@ -8,7 +8,7 @@
 | iso-profile |
 | --- |
 | [releng](https://gitlab.archlinux.org/archlinux/archiso/-/tree/master/configs/releng) |
-| [profile](https://github.com/samwhelp/xerolinux-adjustment/tree/main/iso-build-system/xerolinux-adjustment-iso-profile/recipe/demo/start/build-from-profile/profile) |
+| [profile](https://github.com/samwhelp/xerolinux-adjustment/tree/main/project/xerolinux-adjustment-system/xerolinux-adjustment-iso-profile/recipe/demo/start/build-from-profile/profile) |
 
 
 ## Howto
