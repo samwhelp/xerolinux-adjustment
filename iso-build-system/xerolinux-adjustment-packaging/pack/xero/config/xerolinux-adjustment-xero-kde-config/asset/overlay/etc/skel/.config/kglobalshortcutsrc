@@ -358,4 +358,4 @@ screenlocker=none,none,Screen Locking
 
 [yakuake]
 _k_friendly_name=Yakuake
-toggle-window-state=F12\tMeta+F2,F12,Open/Retract Yakuake
+toggle-window-state=F12\tMeta+F2\tAlt+Shift+Y,F12,Open/Retract Yakuake
