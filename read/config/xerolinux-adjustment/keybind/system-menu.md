@@ -14,7 +14,7 @@ grand_parent: Config
 
 ## Show Window Operations Menu
 
-* [config snippet](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L150)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L150)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
@@ -26,7 +26,7 @@ grand_parent: Config
 
 ## Show Application Menu
 
-* [config snippet](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L226)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L226)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
@@ -44,7 +44,7 @@ grand_parent: Config
 
 ## krunner
 
-* [config snippet](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L283-L286)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L283-L286)
 
 
 | Keybind           | Action        | Command             |

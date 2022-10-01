@@ -21,7 +21,7 @@ grand_parent: Config
 
 ## Config File
 
-* [~/.config/kglobalshortcutsrc](https://github.com/samwhelp/note-about-xerolinux/blob/gh-pages/_demo/adjustment/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc)
+* [~/.config/kglobalshortcutsrc](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc)
 
 
 ## System
