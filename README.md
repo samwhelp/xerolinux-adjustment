@@ -7,7 +7,7 @@
 | [xerolinux-adjustment](https://samwhelp.github.io/xerolinux-adjustment/) | [GitHub](https://github.com/samwhelp/xerolinux-adjustment) |
 
 
-## iso-build-system
+## ISO Build System
 
 | iso-build-system |
 | --- |
@@ -16,14 +16,14 @@
 | [xerolinux-adjustment-repository](https://github.com/samwhelp/xerolinux-adjustment/tree/main/project/xerolinux-adjustment-system/xerolinux-adjustment-repository) |
 
 
-## demo build
+## Demo Build
 
 | prefile |
 | --- |
 | [xerolinux-adjustment](https://github.com/samwhelp/xerolinux-adjustment/tree/main/project/xerolinux-adjustment-system/xerolinux-adjustment-iso-profile/recipe/demo/xerolinux-adjustment/build-from-prefile) |
 
 
-## keybind
+## Keybind
 
 | keybind |
 | --- |
