@@ -35,6 +35,7 @@ grand_parent: Config
 | Keybind          | Action     | Command         |
 | ----------------- | -------- | ---------------- |
 | `Win + q`         | Close Window | `Window Close` |
+| `Alt + F4`         | Close Window | `Window Close` |
 
 
 ## Fullscreen
