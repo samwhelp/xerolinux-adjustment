@@ -9,6 +9,11 @@ grand_parent: Config
 
 # Window Control
 
+> Xerolinux Adjustment / [Keybind](https://samwhelp.github.io/xerolinux-adjustment/read/config/xerolinux-adjustment/keybind.html)
+
+
+## Subject
+
 * [Close](#close)
 * [Fullscreen](#fullscreen)
 * [Maximize](#maximize)
