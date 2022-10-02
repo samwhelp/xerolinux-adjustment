@@ -40,3 +40,8 @@ grand_parent: Config
 | [Launch Favorite Application](keybind/application-launch-favorite) |
 
 
+## Window Control
+
+| Subject |
+| --- |
+| [Window Control](keybind/window-control) |
