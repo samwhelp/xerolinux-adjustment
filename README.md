@@ -24,7 +24,7 @@
 | [xerolinux-adjustment](https://github.com/samwhelp/xerolinux-adjustment/tree/main/project/xerolinux-adjustment-system/xerolinux-adjustment-iso-profile/recipe/demo/xerolinux-adjustment/build-from-prefile) |
 
 
-## keybind
+## Keybind
 
 | keybind |
 | --- |
