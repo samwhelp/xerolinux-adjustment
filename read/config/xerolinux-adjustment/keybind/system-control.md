@@ -57,7 +57,7 @@ grand_parent: Config
 | ----------------- | ------------ | -------------------- |
 | `Meta + grave`  | Toggle Overview | `Overview` |
 
-> grave 指的是 `
+> grave means `
 
 
 ## Toggle Present Windows
