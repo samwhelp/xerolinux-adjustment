@@ -19,6 +19,6 @@ parent: Config
 
 ## Project
 
-* [xerolinux-adjustment](https://github.com/samwhelp/note-about-xerolinux/tree/gh-pages/_demo/adjustment/xerolinux)
+* [xerolinux-kde-adjustment](https://github.com/samwhelp/xerolinux-adjustment/tree/main/project/xerolinux-adjustment-core/xerolinux-kde-adjustment)
 
 
