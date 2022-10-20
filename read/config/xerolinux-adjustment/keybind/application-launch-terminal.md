@@ -14,7 +14,7 @@ grand_parent: Config
 
 ## Normal
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L277-#L281)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L277-#L281)
 
 | Keybind          | Action         | Command                     |
 | ----------------- | ------------- | --------------------------- |
@@ -25,7 +25,7 @@ grand_parent: Config
 
 ## Dropdown
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L359-L361)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L359-L361)
 
 | Keybind          | Action                      | Command                     |
 | ----------------- | ------------------------- | ---------------------------- |

@@ -14,7 +14,7 @@ grand_parent: Config
 
 ## Toggle Show Desktop
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L74)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L74)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
@@ -23,7 +23,7 @@ grand_parent: Config
 
 ## Logout
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L50)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L50)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
@@ -33,7 +33,7 @@ grand_parent: Config
 
 ## Screen Lock
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L49)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L49)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
@@ -42,7 +42,7 @@ grand_parent: Config
 
 ## Sleep
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L314)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L314)
 
 | Keybind           | Action        | Command             |
 | ----------------- | ------------ | -------------------- |
