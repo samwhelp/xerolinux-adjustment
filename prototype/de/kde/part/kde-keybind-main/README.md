@@ -1,5 +1,5 @@
 
-# xerolinux
+# xerolinux / kde
 
 ## Config File Path
 

@@ -4,25 +4,25 @@ set -e
 
 
 ################################################################################
-### Head: xerolinux
+### Head: kde
 ##
-xerolinux_config_install () {
+kde_config_install () {
 
-	echo "## Config: xerolinux"
+	echo "## Config: kde"
 	echo
 
 	echo "mkdir -p $HOME/.config/"
 	mkdir -p "$HOME/.config/"
 
 
-	echo "install -Dm644 ./config/xerolinux/kglobalshortcutsrc $HOME/.config/kglobalshortcutsrc"
-	install -Dm644 "./config/xerolinux/kglobalshortcutsrc" "$HOME/.config/kglobalshortcutsrc"
+	echo "install -Dm644 ./config/kde/kglobalshortcutsrc $HOME/.config/kglobalshortcutsrc"
+	install -Dm644 "./config/kde/kglobalshortcutsrc" "$HOME/.config/kglobalshortcutsrc"
 
 
 	echo
 }
 ##
-### Tail: xerolinux
+### Tail: kde
 ################################################################################
 
 
@@ -30,7 +30,7 @@ xerolinux_config_install () {
 ### Head: main
 ##
 main_config_install () {
-	xerolinux_config_install
+	kde_config_install
 }
 ## start
 main_config_install
