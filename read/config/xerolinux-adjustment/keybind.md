@@ -17,6 +17,7 @@ grand_parent: Config
 * [Config File](#config-file)
 * [System](#system)
 * [Application Launch](#application-launch)
+* [Window Control](#window-control)
 
 
 ## Config File
