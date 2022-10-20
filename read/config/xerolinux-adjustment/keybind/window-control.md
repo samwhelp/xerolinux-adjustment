@@ -30,7 +30,7 @@ grand_parent: Config
 
 ## Close
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L133)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L133)
 
 | Keybind          | Action     | Command         |
 | ----------------- | -------- | ---------------- |
@@ -40,7 +40,7 @@ grand_parent: Config
 
 ## Fullscreen
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L134)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L134)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -49,7 +49,7 @@ grand_parent: Config
 
 ## Maximize
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L138)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L138)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -61,7 +61,7 @@ grand_parent: Config
 
 ## Minimize
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L141)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L141)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -71,7 +71,7 @@ grand_parent: Config
 
 ## BeginMove
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L142)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L142)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -82,7 +82,7 @@ grand_parent: Config
 
 ## BeginResize
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L164)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L164)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -93,7 +93,7 @@ grand_parent: Config
 
 ## KeepAbove
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L131)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L131)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -102,7 +102,7 @@ grand_parent: Config
 
 ## KeepBelow
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L132)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L132)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -111,7 +111,7 @@ grand_parent: Config
 
 ## Shade
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L165)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L165)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -120,7 +120,7 @@ grand_parent: Config
 
 ## Decorations
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L144)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L144)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -129,7 +129,7 @@ grand_parent: Config
 
 ## Toggle Window Raise/Lower
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L118)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L118)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
@@ -138,7 +138,7 @@ grand_parent: Config
 
 ## Move Window to Center
 
-* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/blob/main/prototype/xerolinux/part/xerolinux-keybind-main/config/xerolinux/kglobalshortcutsrc#L67)
+* [config snippet](https://github.com/samwhelp/xerolinux-adjustment/tree/main/prototype/de/kde/part/kde-keybind-main/config/kde/kglobalshortcutsrc#L67)
 
 | Keybind  | Action       | Command                      |
 | --------- | ---------- | ----------------------------- |
