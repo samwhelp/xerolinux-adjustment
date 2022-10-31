@@ -214,6 +214,7 @@ mod_iso_make_finish () {
 
 mod_iso_make_change_owner () {
 
+	util_error_echo "sudo chown $(id -u):$(id -u) tmp/out -R"
 	sudo chown $(id -u):$(id -u) tmp/out -R
 
 	#sudo chown $(id -un):$(id -un) tmp/out -R
