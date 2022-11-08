@@ -1,6 +1,13 @@
 
 # sakura
 
+
+## Prepare
+
+``` sh
+sudo pacman -Sy --needed base-devel
+```
+
 ## Link
 
 * [https://packages.ubuntu.com/jammy/sakura](https://packages.ubuntu.com/jammy/sakura)
