@@ -95,9 +95,9 @@ mod_iso_profile_prepare () {
 
 mod_iso_profile_prepare_by_zip () {
 
-	if [ -d "./tmp/xero_iso-main/archiso" ]; then
-		util_error_echo "cp -rf ./tmp/xero_iso-main/archiso ./profile"
-		cp -rf ./tmp/xero_iso-main/archiso ./profile
+	if [ -d "./tmp/xero_iso-main/XeroKDE" ]; then
+		util_error_echo "cp -rf ./tmp/xero_iso-main/XeroKDE ./profile"
+		cp -rf ./tmp/xero_iso-main/XeroKDE ./profile
 		return
 	fi
 
@@ -112,17 +112,17 @@ mod_iso_profile_prepare_by_zip () {
 
 
 
-	util_error_echo "cp -rf ./tmp/xero_iso-main/archiso ./profile"
-	cp -rf ./tmp/xero_iso-main/archiso ./profile
+	util_error_echo "cp -rf ./tmp/xero_iso-main/XeroKDE ./profile"
+	cp -rf ./tmp/xero_iso-main/XeroKDE ./profile
 
 }
 
 mod_iso_profile_prepare_by_git () {
 
 
-	if [ -d "./tmp/xero_iso/archiso" ]; then
-		util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
-		cp -rf ./tmp/xero_iso/archiso ./profile
+	if [ -d "./tmp/xero_iso/XeroKDE" ]; then
+		util_error_echo "cp -rf ./tmp/xero_iso/XeroKDE ./profile"
+		cp -rf ./tmp/xero_iso/XeroKDE ./profile
 		return
 	fi
 
@@ -133,8 +133,8 @@ mod_iso_profile_prepare_by_git () {
 		util_error_echo 'xero_iso exits'
 	fi
 
-	util_error_echo "cp -rf ./tmp/xero_iso/archiso ./profile"
-	cp -rf ./tmp/xero_iso/archiso ./profile
+	util_error_echo "cp -rf ./tmp/xero_iso/XeroKDE ./profile"
+	cp -rf ./tmp/xero_iso/XeroKDE ./profile
 
 
 }
