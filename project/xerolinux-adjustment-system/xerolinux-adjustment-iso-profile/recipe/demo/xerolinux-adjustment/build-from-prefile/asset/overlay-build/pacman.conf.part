@@ -12,8 +12,8 @@
 
 [xerolinux-adjustment]
 SigLevel = Optional TrustAll
-Include = /etc/pacman.d/xerolinux-adjustment-mirrorlist
-#Server = file:///opt/xerolinux-adjustment/iso-build-system/xerolinux-adjustment-repository/repo/main
+#Include = /etc/pacman.d/xerolinux-adjustment-mirrorlist
+Server = file:///opt/xerolinux-adjustment/iso-build-system/xerolinux-adjustment-repository/repo/main
 
 
 ##
