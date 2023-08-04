@@ -22,8 +22,20 @@ xerolinux-adjustment-xero-kde-config
 ## font
 ##
 
+noto-fonts
 noto-fonts-cjk
 
+ttf-dejavu
+ttf-liberation
+ttf-bitstream-vera
+ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
+opendesktop-fonts
+ttf-opensans
+freetype2
 
 
 ##
