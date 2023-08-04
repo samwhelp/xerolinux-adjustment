@@ -255,12 +255,26 @@ mod_iso_profile_overlay () {
 	util_error_echo "##"
 	util_error_echo
 
+
+	mod_iso_profile_overlay_by_dir
 	mod_iso_profile_overlay_pacman_conf
 	mod_iso_profile_overlay_packages_x86_64
 	mod_iso_profile_overlay_locale
 	mod_iso_profile_overlay_bashrc
 	mod_iso_profile_overlay_sddm_conf
 }
+
+
+mod_iso_profile_overlay_by_dir () {
+
+	util_error_echo
+
+	util_error_echo "cp -rf ./asset/overlay/etc/. ./profile/airootfs/etc"
+	cp -rf ./asset/overlay/etc/. ./profile/airootfs/etc
+
+	util_error_echo
+}
+
 
 mod_iso_profile_overlay_pacman_conf () {
 
