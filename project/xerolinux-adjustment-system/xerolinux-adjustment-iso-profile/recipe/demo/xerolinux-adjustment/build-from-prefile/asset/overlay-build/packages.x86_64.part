@@ -35,15 +35,15 @@ noto-fonts-cjk
 
 ttf-dejavu
 ttf-liberation
-ttf-bitstream-vera
+#ttf-bitstream-vera
 ttf-ubuntu-font-family
-cantarell-fonts
-ttf-croscore
-ttf-carlito
-ttf-caladea
-opendesktop-fonts
-ttf-opensans
-freetype2
+#cantarell-fonts
+#ttf-croscore
+#ttf-carlito
+#ttf-caladea
+#opendesktop-fonts
+#ttf-opensans
+#freetype2
 
 
 ##
