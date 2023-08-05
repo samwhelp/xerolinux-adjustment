@@ -10,7 +10,10 @@ OpenGLIsUnsafe=false
 [Desktops]
 Id_1=290014f1-ab74-4eff-ab3d-0f5e50435119
 Id_2=459315d0-9437-4fde-9640-295bbc95ff31
-Number=2
+Id_3=2cd8ad47-528b-471a-9608-f7e5e2f1cccb
+Id_4=753221d3-34ad-42b0-ae41-580331c56f25
+Id_5=bf7ecac2-67d6-4630-8ea3-ada3ec8daa68
+Number=5
 Rows=1
 
 [Effect-PresentWindows]
