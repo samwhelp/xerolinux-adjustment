@@ -7,7 +7,7 @@
 
 | iso-profile |
 | --- |
-| [profile](https://github.com/xerolinux/xero_iso/tree/main/archiso) |
+| [profile](https://github.com/xerolinux/xero_iso/tree/main/XeroKDE) |
 
 
 ## Howto
