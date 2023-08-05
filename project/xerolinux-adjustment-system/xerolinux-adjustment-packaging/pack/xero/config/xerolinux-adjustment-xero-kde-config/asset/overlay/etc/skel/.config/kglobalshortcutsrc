@@ -278,7 +278,7 @@ _launch=Ctrl+Alt+E,none,Kate
 NewTab=none,none,Open a New Tab
 NewWindow=none,none,Open a New Window
 _k_friendly_name=Konsole
-_launch=Ctrl+Alt+T\tAlt+Return\tAlt+Shift+A,Ctrl+Alt+T,Konsole
+_launch=Alt+Return\tCtrl+Alt+T\tCtrl+Alt+A,Ctrl+Alt+T,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
@@ -316,6 +316,10 @@ Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Key
 Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
+[pcmanfm-qt.desktop]
+_k_friendly_name=PCManFM-Qt File Manager
+_launch=Alt+Shift+G,none,PCManFM-Qt File Manager
+
 [plasmashell]
 _k_friendly_name=Latte Dock
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
@@ -346,6 +350,10 @@ stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=Alt+Tab,,Switch to Next Activity
 switch to previous activity=Alt+`,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[sakura.desktop]
+_k_friendly_name=Sakura
+_launch=Alt+Shift+A\tAlt+Shift+T,none,Sakura
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings
