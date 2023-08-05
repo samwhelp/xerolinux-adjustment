@@ -94,20 +94,26 @@ curl
 ##
 
 xerolinux-adjustment-modeling-vi
-vim
-neovim
-micro
 
-xerolinux-adjustment-modeling-sublime-text
+vim
+xerolinux-adjustment-modeling-vim
+
+neovim
+xerolinux-adjustment-modeling-nvim
+
+micro
+xerolinux-adjustment-modeling-micro
+
 sublime-text-4
+xerolinux-adjustment-modeling-sublime-text
 
 
 ##
 ## Terminal
 ##
 
-xerolinux-adjustment-modeling-sakura
 sakura
+xerolinux-adjustment-modeling-sakura
 
 xterm
 
@@ -116,8 +122,9 @@ xterm
 ## File Manager
 ##
 
-xerolinux-adjustment-modeling-pcmanfm-qt
 pcmanfm-qt
+xerolinux-adjustment-modeling-pcmanfm-qt
+
 lxqt-archiver
 
 
@@ -125,16 +132,17 @@ lxqt-archiver
 ## Image Viewer
 ##
 
-xerolinux-adjustment-modeling-viewnior
 viewnior
+xerolinux-adjustment-modeling-viewnior
 
 
 ##
 ## Video Player
 ##
 
-xerolinux-adjustment-modeling-mpv
 mpv
+xerolinux-adjustment-modeling-mpv
+
 youtube-dl
 
 
