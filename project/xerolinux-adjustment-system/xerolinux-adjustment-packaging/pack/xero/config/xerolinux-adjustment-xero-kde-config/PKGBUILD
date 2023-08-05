@@ -37,7 +37,7 @@ prepare () {
 
 	##return 0
 
-	cp -af ../asset/. "${srcdir}"
+	cp -rf ../asset/. "${srcdir}"
 }
 
 
@@ -69,10 +69,10 @@ package () {
 	##
 
 	## xero-kde-config: /etc
-	cp -af "${source_system_etc_dir_path}/." "${target_system_etc_dir_path}"
+	cp -rf "${source_system_etc_dir_path}/." "${target_system_etc_dir_path}"
 
 	## overlay: /etc
-	cp -avf "${source_overlay_etc_dir_path}/." "${target_system_etc_dir_path}"
+	cp -rvf "${source_overlay_etc_dir_path}/." "${target_system_etc_dir_path}"
 
 
 	##
