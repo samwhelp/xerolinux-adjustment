@@ -1,5 +1,6 @@
 [Appearance]
 ColorScheme=AplumaDark
+DimmValue=128
 Font=Monospace,16,-1,7,50,0,0,0,0,0
 LineSpacing=4
 
@@ -8,6 +9,8 @@ CursorShape=1
 
 [General]
 Command=/bin/bash
+DimWhenInactive=true
+InvertSelectionColors=false
 Name=XeroLinux
 Parent=FALLBACK/
 StartInCurrentSessionDir=true
