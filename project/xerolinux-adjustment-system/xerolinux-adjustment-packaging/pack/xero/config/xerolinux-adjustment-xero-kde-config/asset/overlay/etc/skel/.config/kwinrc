@@ -81,8 +81,6 @@ LayoutName=coverswitch
 [Tiling]
 padding=4
 
-[Tiling][9350f969-92d0-5658-bb27-639b07d90acc]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
 [Windows]
 Placement=Centered
+RollOverDesktops=true
