@@ -160,11 +160,13 @@ ueberzug
 
 
 ##
-## pygithub
+## xdg
 ##
 
+xerolinux-adjustment-modeling-xdg-mime-applications
 xerolinux-adjustment-modeling-xdg-user-dir-templates
 python-pygithub
+
 
 
 
