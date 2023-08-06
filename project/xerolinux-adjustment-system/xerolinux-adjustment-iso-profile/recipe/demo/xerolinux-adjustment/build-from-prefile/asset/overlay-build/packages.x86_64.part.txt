@@ -17,11 +17,14 @@
 
 xerolinux-adjustment-xero-kde-config
 
+kwrite
 xerolinux-adjustment-modeling-kwrite
 
+kate
 xerolinux-adjustment-modeling-kate
 
 kdevelop
+xerolinux-adjustment-modeling-kdevelop
 
 
 

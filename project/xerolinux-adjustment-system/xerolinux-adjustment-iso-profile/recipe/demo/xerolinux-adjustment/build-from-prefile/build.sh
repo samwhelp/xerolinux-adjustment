@@ -283,8 +283,8 @@ mod_iso_profile_overlay_pacman_conf () {
 	#util_error_echo "install -Dm644 ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf"
 	#install -Dm644 ./asset/overlay/etc/pacman.conf ./profile/airootfs/etc/pacman.conf
 
-	util_error_echo "cat ./asset/overlay/etc/pacman.conf.part >> ./profile/airootfs/etc/pacman.conf"
-	cat ./asset/overlay/etc/pacman.conf.part >> ./profile/airootfs/etc/pacman.conf
+	util_error_echo "cat ./asset/overlay/etc/pacman.conf.part.txt >> ./profile/airootfs/etc/pacman.conf"
+	cat ./asset/overlay/etc/pacman.conf.part.txt >> ./profile/airootfs/etc/pacman.conf
 
 
 
@@ -292,8 +292,8 @@ mod_iso_profile_overlay_pacman_conf () {
 	#install -Dm644 ./asset/overlay-build/pacman.conf ./profile/pacman.conf
 
 
-	util_error_echo "cat ./asset/overlay-build/pacman.conf.part >> ./profile/pacman.conf"
-	cat ./asset/overlay-build/pacman.conf.part >> ./profile/pacman.conf
+	util_error_echo "cat ./asset/overlay-build/pacman.conf.part.txt >> ./profile/pacman.conf"
+	cat ./asset/overlay-build/pacman.conf.part.txt >> ./profile/pacman.conf
 
 
 
@@ -308,8 +308,8 @@ mod_iso_profile_overlay_packages_x86_64 () {
 	util_error_echo "sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64"
 	sed -i 's/xero-kde-config/#xero-kde-config/g' ./profile/packages.x86_64
 
-	util_error_echo "cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64"
-	cat ./asset/overlay-build/packages.x86_64.part >> ./profile/packages.x86_64
+	util_error_echo "cat ./asset/overlay-build/packages.x86_64.part.txt >> ./profile/packages.x86_64"
+	cat ./asset/overlay-build/packages.x86_64.part.txt >> ./profile/packages.x86_64
 
 	util_error_echo
 
