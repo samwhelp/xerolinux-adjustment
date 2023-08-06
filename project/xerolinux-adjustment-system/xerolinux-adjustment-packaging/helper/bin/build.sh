@@ -26,12 +26,60 @@ source "$THE_BASE_DIR_PATH/init.sh"
 
 
 ################################################################################
+### Head: Model / Find Build Script
+##
+
+mod_build_list () {
+
+	cd "${THE_PLAN_DIR_PATH}"
+
+
+	local package_list=$(sys_build_script_find)
+
+	for package_item in ${package_list}; do
+		#echo "${package_item}"
+
+		cd "${package_item}"
+
+		echo
+		echo
+		echo "################################################################################"
+		echo "### Head: "
+		echo "##"
+
+		pwd
+
+		./build.sh
+
+		echo "##"
+		echo "### Tail: "
+		echo "################################################################################"
+
+
+
+		cd "$OLDPWD"
+	done
+
+
+
+}
+
+##
+### Tail: Model / Find
+################################################################################
+
+
+################################################################################
 ### Head: Model / Build
 ##
 
 mod_build () {
 
-	echo "TODO: build"
+	##echo "TODO: build"
+
+	mod_build_list
+
+	return 0
 
 }
 
