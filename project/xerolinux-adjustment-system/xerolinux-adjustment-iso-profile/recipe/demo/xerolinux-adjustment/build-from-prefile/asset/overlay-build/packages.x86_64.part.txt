@@ -154,6 +154,8 @@ youtube-dl
 ##
 
 fzf
+xerolinux-adjustment-modeling-fzf
+
 ueberzug
 
 
