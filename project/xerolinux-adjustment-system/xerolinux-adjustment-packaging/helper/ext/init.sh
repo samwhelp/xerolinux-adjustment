@@ -26,9 +26,16 @@ base_var_dump
 ### Head: Func / Init
 ##
 
-## extra function
+##
+## util function
+##
 source "$THE_EXT_DIR_PATH/util.sh"
 
+
+##
+## mod function
+##
+source "$THE_EXT_DIR_PATH/mod/build.sh"
 
 ##
 ### Tail: Func / Init
