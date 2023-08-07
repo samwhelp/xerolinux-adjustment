@@ -96,6 +96,8 @@ curl
 ## Text Editor
 ##
 
+xerolinux-adjustment-modeling-editor
+
 xerolinux-adjustment-modeling-vi
 
 vim
